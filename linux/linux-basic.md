@@ -95,42 +95,41 @@ linux distributions do is they usually set the system up to update the database 
 `which` locate a command
 
 
-
-<div id="history"><div>
+<div id="history"></div>
 
 `history` show recently issue command
 
 
-<div id="apropos"><div>
+<div id="apropos"></div>
 
 `apropos` search the manual page names and descriptions
 
 
-<div id="mkdir"><div>
+<div id="mkdir"></div>
 
 `mkdir` create a directory
 - mkdir dir1
 - mkdir dir1 dir2
 
 
-<div id="touch"><div>
+<div id="touch"></div>
 
 `touch` change file timestamps
 - touch file1 file2 file3
 
-<div id="cp"><div>
+<div id="cp"></div>
 
 `cp` copy files and directories
 - cp bashrc.bak bashrc
 
 
-<div id="mv"><div>
+<div id="mv"></div>
 
 `mv` move (rename) files
 - mv bashrc.bak bashrc
 
 
-<div id="rm"><div>
+<div id="rm"></div>
 
 `rm` remove files or directories
 - rm file1 -r  
@@ -141,14 +140,14 @@ linux distributions do is they usually set the system up to update the database 
 - rm file*
 
 
-<div id="rmdir"><div>
+<div id="rmdir"></div>
 
 `rmdir` remove empty directories
 - rmdir /rico/* 
    - 底下的空資料夾 將會被移除
 
 
-<div id="cat"><div>
+<div id="cat"></div>
 
 `cat` concatenate files and print on the standard output
 - cat file1 file2
@@ -159,13 +158,12 @@ linux distributions do is they usually set the system up to update the database 
   - overwrite file content.
   
 
-<div id="more/less"><div>
+<div id="more/less"></div>
 
 `more/less`- file perusal filter for crt viewing
 - more file1 (Space key to next page, Q to leave)
 - less file1 (arrow key one line at a time, Space key to next page, Q to leave)
 - history | less (Use out put from history command directly put into less program)
-
 
 
 <div id="nano"></div>
