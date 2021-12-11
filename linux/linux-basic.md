@@ -1,5 +1,3 @@
-<div style="width: 1000px; margin: auto; background: #f5f5f5; padding: 20px">
-
 https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
 
 <a href="#whoami">`whoami`</a>
@@ -121,5 +119,3 @@ linux distributions do is they usually set the system up to update the database 
   - Ctrl+O (另存新檔)
   - Ctrl+R (開啟檔案)
   - Ctrl+X (離開)
-  
-</div>
