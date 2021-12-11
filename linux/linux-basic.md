@@ -10,7 +10,6 @@ https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
 <a href="#popd">`popd`</a>
 <a href="#file">`file`</a>
 <a href="#locate">`locate`</a>
-
 <a href="#which">`which`</a>
 <a href="#history">`history`</a>
 <a href="#apropos">`apropos`</a>
@@ -20,7 +19,6 @@ https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
 <a href="#mv">`mv`</a>
 <a href="#rm">`rm`</a>
 <a href="#rmdir">`rmdir`</a>
-
 <a href="#cat">`cat`</a>
 <a href="#more">`more`</a>
 <a href="#less">`less`</a>
