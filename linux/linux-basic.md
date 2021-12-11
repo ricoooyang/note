@@ -30,6 +30,7 @@
 <a href="#chmod">`chmod`</a>
 <a href="#free">`free`</a>
 <a href="#watch">`watch`</a>
+<a href="#ps">`ps`</a>
 <a href="#killall">`killall`</a>
 <a href="#usefulshortcut">`useful shortcut`</a>
 
@@ -259,6 +260,13 @@ well as the buffers and caches used by the kernel. The  information  is  gathere
 
 - watch free -h
 - Ctrl+C (leve)
+
+-------------
+<div id="ps"></div>
+
+`ps` report a snapshot of the current processes.
+
+- ps -aux
 
 -------------
 <div id="killall"></div>
