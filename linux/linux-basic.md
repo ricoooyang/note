@@ -28,6 +28,8 @@ reference: https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
 <a href="#users">`users`</a>
 <a href="#id">`id`</a>
 <a href="#linuxpermission">`linux permission`</a>
+<a href="#chmod">`chmod`</a>
+
 
 <br/>
 
@@ -231,6 +233,15 @@ linux distributions do is they usually set the system up to update the database 
 |----|----|----|
 |rwx|rw|r|
 |4+2+1=7|4+2=6|4|
+
+-------------
+<div id="chmod"></div>
+
+`chmod` change file mode bits, it allows you to change permission of file.
+
+- chmod +764 file (uses:rwx, group:rw, everyone:r)
+- chmod +x file1 (add execute permission to everyone)
+
 
 
 
