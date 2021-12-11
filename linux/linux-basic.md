@@ -1,5 +1,4 @@
-reference: https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
-
+# linux basic
 <a href="#whoami">`whoami`</a>
 <a href="#whatis">`whatis`</a>
 <a href="#man">`man`</a>
@@ -29,9 +28,11 @@ reference: https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
 <a href="#id">`id`</a>
 <a href="#linuxpermission">`linux permission`</a>
 <a href="#chmod">`chmod`</a>
+<a href="#free">`free`</a>
+<a href="#watch">`watch`</a>
+<a href="#killall">`killall`</a>
+<a href="#usefulshortcut">`useful shortcut`</a>
 
-
-<br/>
 
 -------------
 <div id="whoami"></div>
@@ -241,6 +242,49 @@ linux distributions do is they usually set the system up to update the database 
 
 - chmod +764 file (uses:rwx, group:rw, everyone:r)
 - chmod +x file1 (add execute permission to everyone)
+
+-------------
+<div id="free"></div>
+
+`free` free  displays  the  total  amount of free and used physical and swap memory in the system, as
+well as the buffers and caches used by the kernel. The  information  is  gathered  by  parsing
+/proc/meminfo.
+
+- free -h
+
+-------------
+<div id="watch"></div>
+
+`watch` execute a program periodically, showing output fullscreen
+
+- watch free -h
+- Ctrl+C (leve)
+
+-------------
+<div id="killall"></div>
+
+`killall` killall sends a signal to all processes running any of the specified commands.
+
+- killall firefox
+
+
+-------------
+<div id="usefulshortcut"></div>
+
+## useful shortcut on some emulator
+
+- Ctrl+D - signal bash that there is no more input
+- Ctrl+L or Ctrl+C - redraw the screen
+- Ctrl++ - make text bigger in terminal emulator
+- Ctrl+- - make text smaller in terminal emulator
+
+
+-------
+
+### lab: https://www.katacoda.com/courses/ubuntu/playground
+### reference: https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
+
+-------
 
 
 
