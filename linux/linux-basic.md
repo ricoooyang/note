@@ -68,8 +68,8 @@ https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
 `cd`
 - cd /etc
 - cd .. 返回至上層
-- cd , cd ~ 返回至 /root
-- cd rico's\\ folder 反斜線為跳脫字元路徑中含特殊符號例如空白
+- cd , cd ~ 返回至 /root (或該user的folder)
+- cd rico's\\ folder (反斜線為跳脫字元 cd至“rico's folder”)
 
 -------------
 <div id="pushdpopd"></div>
