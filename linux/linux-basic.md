@@ -25,6 +25,8 @@ https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
 <a href="#nano">`nano`</a>
 <a href="#sudo">`sudo`</a>
 <a href="#su">`su`</a>
+<a href="#users">`users`</a>
+<a href="#id">`id`</a>
 
 <br/>
 -------------
@@ -195,4 +197,20 @@ linux distributions do is they usually set the system up to update the database 
 
 - su - cindy (get into cindy's home automatically)
 - su cindy (get into cindy's home manually)
+- su - (attempt to log you in as a root)
+- su (attempt to log you in as a root)
 - exit
+
+-------------
+<div id="users"></div>
+
+`users` print the user names of users currently logged in to the current host
+
+-------------
+<div id="id"></div>
+
+`id` print real and effective user and group IDs
+
+
+
+
