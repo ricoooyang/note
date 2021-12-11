@@ -1,4 +1,4 @@
-https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
+reference: https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
 
 <a href="#whoami">`whoami`</a>
 <a href="#whatis">`whatis`</a>
@@ -27,8 +27,10 @@ https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
 <a href="#su">`su`</a>
 <a href="#users">`users`</a>
 <a href="#id">`id`</a>
+<a href="#linuxpermission">`linux permission`</a>
 
 <br/>
+
 -------------
 <div id="whoami"></div>
 
@@ -210,6 +212,29 @@ linux distributions do is they usually set the system up to update the database 
 <div id="id"></div>
 
 `id` print real and effective user and group IDs
+
+-------------
+<div id="linuxpermission"></div>
+
+## Linux Permission
+
+- when you use ls -l, use a long listing format. it will show each file permission information.
+- <a href="https://www.youtube.com/watch?v=oxuRxtrO2Ag&list=PLbfiCCN9Jz9AvByif7bScObtuIGdc3XOm&index=1&t=22s">56:40</a>
+
+|symbol|number|meaning|
+|----|----|----|
+|r|4|read|
+|w|2|write|
+|x|1|execute|
+
+|user|group|everyone|
+|----|----|----|
+|rwx|rw|r|
+|4+2+1=7|4+2=6|4|
+
+
+
+
 
 
 
