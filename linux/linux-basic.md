@@ -85,6 +85,8 @@ https://www.youtube.com/watch?v=oxuRxtrO2Ag&t=2646s
 
 `locate` locate  reads  one or more databases prepared by updatedb(8) and writes file names matching at least one of the PATTERNs to standard output, one per line.
 
+- locate adduser
+
 >locate command uses a database to find things,
 linux distributions do is they usually set the system up to update the database for locate once a day. if you want to update locate
 > >sodo updatedb
@@ -135,8 +137,7 @@ linux distributions do is they usually set the system up to update the database 
 <div id="rm"></div>
 
 `rm` remove files or directories
-- rm file1 -r  
-  - remove directories and their contents recursively
+- rm file1 -r (remove directories and their contents recursively)
 - rm --help
 - rm file1
 - rm file1 file2
@@ -192,4 +193,6 @@ linux distributions do is they usually set the system up to update the database 
 
 `su` The su command is used to become another user during a login session.
 
-- su - cindy
+- su - cindy (get into cindy's home automatically)
+- su cindy (get into cindy's home manually)
+- exit
