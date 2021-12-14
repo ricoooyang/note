@@ -52,6 +52,13 @@
   
 - <div id="kube-controller-manager">kube-controller-manager</div>
 
+  >  Controller Manager 則是 Kubernetes 中所有 Controllers 的核心管理者。Controller Manager 會定期去訪問 API Server，若有接收到變更的指令 Controller Manager 則會去更改這些 Controllers 的狀態。
+  
+  - <a href="https://kubernetes.io/docs/concepts/architecture/nodes/#node-controller"> Node controller: Responsible for noticing and responding when nodes go down. </a>
+  - Job controller: Watches for Job objects that represent one-off tasks, then creates Pods to run those tasks to completion.
+  - Endpoints controller: Populates the Endpoints object (that is, joins Services & Pods).
+  - Service Account & Token controllers: Create default accounts and API access tokens for new namespaces.
+
 -------
 
 ![title](images/1-1.jpg)
