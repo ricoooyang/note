@@ -170,7 +170,7 @@ linux distributions do is they usually set the system up to update the database 
   - overwrite file content.
 
 -------------
-<div id="more/less"></div>
+<div id="moreless"></div>
 
 `more/less` file perusal filter for crt viewing
 - more file1 (Space key to next page, Q to leave)
