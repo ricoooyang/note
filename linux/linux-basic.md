@@ -5,8 +5,8 @@
 <a href="#pwd">`pwd`</a>
 <a href="#ls">`ls`</a>
 <a href="#cd">`cd`</a>
-<a href="#pushd">`pushd`</a>
-<a href="#popd">`popd`</a>
+<a href="#pushdpopd">`pushd`</a>
+<a href="#pushdpopd">`popd`</a>
 <a href="#file">`file`</a>
 <a href="#locate">`locate`</a>
 <a href="#which">`which`</a>
@@ -19,8 +19,8 @@
 <a href="#rm">`rm`</a>
 <a href="#rmdir">`rmdir`</a>
 <a href="#cat">`cat`</a>
-<a href="#more">`more`</a>
-<a href="#less">`less`</a>
+<a href="#moreless">`more`</a>
+<a href="#moreless">`less`</a>
 <a href="#nano">`nano`</a>
 <a href="#sudo">`sudo`</a>
 <a href="#su">`su`</a>
