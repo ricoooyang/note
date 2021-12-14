@@ -6,6 +6,7 @@
     - <a href="#etcd">etcd</a>
     - <a href="#kube-scheduler">kube-scheduler</a>
     - <a href="#kube-controller-manager">kube-controller-manager</a>
+    - <a href="#cloud-controller-manager">cloud-controller-manager</a>
   - <a href="#node-components">Node Components</a> 
     - <a href="#kubelet">kubelet</a>
     - <a href="#kube-proxy">kube-proxy</a>
@@ -60,6 +61,12 @@
   - Job controller: Watches for Job objects that represent one-off tasks, then creates Pods to run those tasks to completion.
   - Endpoints controller: Populates the Endpoints object (that is, joins Services & Pods).
   - Service Account & Token controllers: Create default accounts and API access tokens for new namespaces.
+  
+
+- <div id="cloud-controller-manager"><a href="https://kubernetes.io/docs/concepts/architecture/cloud-controller/">cloud-controller-manager</a></div>
+
+  > The cloud-controller-manager is a Kubernetes control plane component that embeds cloud-specific control logic. The cloud controller manager lets you link your cluster into your cloud provider's API, and separates out the components that interact with that cloud platform from components that only interact with your cluster.
+
 
 -------
 
