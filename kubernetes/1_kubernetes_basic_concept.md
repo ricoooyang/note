@@ -10,6 +10,7 @@
   - <a href="#node-components">Node Components</a> 
     - <a href="#kubelet">kubelet</a>
     - <a href="#kube-proxy">kube-proxy</a>
+    - <a href="#container-runtime">Container runtime</a>
 - <a href="#components">Workloads</a>
   - <a href="#pods">Pods</a>
   - <a href="#workload-resources">Workload Resources</a>
@@ -66,6 +67,39 @@
 - <div id="cloud-controller-manager"><a href="https://kubernetes.io/docs/concepts/architecture/cloud-controller/">cloud-controller-manager</a></div>
 
   > The cloud-controller-manager is a Kubernetes control plane component that embeds cloud-specific control logic. The cloud controller manager lets you link your cluster into your cloud provider's API, and separates out the components that interact with that cloud platform from components that only interact with your cluster.
+
+
+#### <div id="node-components">2. Node Components</div>
+
+    > Node components run on every node, maintaining running pods and providing the Kubernetes runtime environment.
+
+    > 一個 Worker Node（簡稱 Node）對應到一台機器，可以是實體機、虛擬機如 AWS 上的一台 EC2 或 GCP 上的一台 Computer Engine。每個 Node 中都有三個組件：kubelet、kube-proxy、Container Runtime。
+
+
+- <div id="kubelet">kubelet</div>
+
+    > An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod. 
+      The kubelet takes a set of PodSpecs that are provided through various mechanisms and ensures that the containers described in those PodSpecs are running and healthy. 
+      The kubelet doesn't manage containers which were not created by Kubernetes.
+
+    > Node 的管理員，負責管理該 Node 上的所有 Pods 的狀態並負責與 Master 溝通
+
+
+- <div id="kube-proxy">kube-proxy</div>
+
+    > kube-proxy is a network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept.
+      kube-proxy maintains network rules on nodes. These network rules allow network communication to your Pods from network sessions inside or outside of your cluster.
+      kube-proxy uses the operating system packet filtering layer if there is one and it's available. Otherwise, kube-proxy forwards the traffic itself.
+
+    > kube-proxy 負責管理 node network rules，network rules 允許 network sessions 在整個Cluster及Pods間溝通
+
+
+- <div id="container-runtime">Container Runtime</div>
+ 
+    > The container runtime is the software that is responsible for running containers.
+      Kubernetes supports several container runtimes: Docker, containerd, CRI-O, and any implementation of the Kubernetes CRI (Container Runtime Interface).
+
+    > 該 Node 真正負責容器執行的程式，以 Docker 容器為例其對應的 Container Runtime 就是 Docker Engine
 
 
 -------
