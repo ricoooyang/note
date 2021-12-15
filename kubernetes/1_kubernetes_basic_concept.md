@@ -11,7 +11,7 @@
     - <a href="#kubelet">kubelet</a>
     - <a href="#kube-proxy">kube-proxy</a>
     - <a href="#container-runtime">Container runtime</a>
-- <a href="#components">Workloads</a>
+- <a href="#workloads">Workloads</a>
   - <a href="#pods">Pods</a>
   - <a href="#workload-resources">Workload Resources</a>
   
@@ -91,7 +91,7 @@
       kube-proxy maintains network rules on nodes. These network rules allow network communication to your Pods from network sessions inside or outside of your cluster.
       kube-proxy uses the operating system packet filtering layer if there is one and it's available. Otherwise, kube-proxy forwards the traffic itself.
 
-    > kube-proxy 負責管理 node network rules，network rules 允許 network sessions 在整個Cluster及Pods間溝通
+    > 處理每個節點上的虛擬網路。 Proxy 會路由網路流量，以及管理服務和 Pod 的 IP 定址。
 
 
 - <div id="container-runtime">Container Runtime</div>
@@ -100,6 +100,23 @@
       Kubernetes supports several container runtimes: Docker, containerd, CRI-O, and any implementation of the Kubernetes CRI (Container Runtime Interface).
 
     > 該 Node 真正負責容器執行的程式，以 Docker 容器為例其對應的 Container Runtime 就是 Docker Engine
+
+
+-------
+
+### <div id="workloads"><a href="https://kubernetes.io/docs/concepts/workloads">Workloads</a></div>
+
+> A workload is an application running on Kubernetes. Whether your workload is a single component or several that work together, on Kubernetes you run it inside a set of pods. In Kubernetes, a Pod represents a set of running containers on your cluster.
+  Kubernetes pods have a defined lifecycle. For example, once a pod is running in your cluster then a critical fault on the node where that pod is running means that all the pods on that node fail. Kubernetes treats that level of failure as final: you would need to create a new Pod to recover, even if the node later becomes healthy.
+  However, to make life considerably easier, you don't need to manage each Pod directly. Instead, you can use workload resources that manage a set of pods on your behalf. These resources configure controllers that make sure the right number of the right kind of pod are running, to match the state you specified.
+
+> 在一組 Pod 中運行 workload，用來「管理或是運行 Container」 在 Cluster 上。
+
+- Kubernetes provides several built-in workload resources:
+    - Deployment 
+    - StatefulSet 
+    - DaemonSet
+    - Job and CronJob 
 
 
 -------
@@ -113,6 +130,7 @@
 - reference: 
     - https://cwhu.medium.com/kubernetes-basic-concept-tutorial-e033e3504ec0
     - https://kubernetes.io/docs/concepts/overview/components/
+    - https://www.baeldung.com/ops/kubernetes-deployment-vs-statefulsets
 
 -------
 
