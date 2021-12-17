@@ -17,7 +17,7 @@
   
 -------------
 
-### <div id="introduction">介紹</div>
+## <div id="introduction">介紹</div>
 
 - Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
     - 同時部署多個容器到多台機器上（Deployment）
@@ -26,7 +26,7 @@
 
 -------
 
-### <div id="components">Components</div>
+## <div id="components">Components</div>
 
 #### <div id="control-plane-components">1. Control Plane Components</div>
 
@@ -112,7 +112,7 @@
 
 -------
 
-### <div id="workloads"><a href="https://kubernetes.io/docs/concepts/workloads">Workloads</a></div>
+## <div id="workloads"><a href="https://kubernetes.io/docs/concepts/workloads">Workloads</a></div>
 
 > A workload is an application running on Kubernetes. Whether your workload is a single component or several that work together, on Kubernetes you run it inside a set of pods. In Kubernetes, a Pod represents a set of running containers on your cluster.
   Kubernetes pods have a defined lifecycle. For example, once a pod is running in your cluster then a critical fault on the node where that pod is running means that all the pods on that node fail. Kubernetes treats that level of failure as final: you would need to create a new Pod to recover, even if the node later becomes healthy.
