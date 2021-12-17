@@ -12,7 +12,7 @@
     - <a href="#kube-proxy">kube-proxy</a>
     - <a href="#container-runtime">Container runtime</a>
 - <a href="#workloads">Workloads</a>
-  - <a href="#pods">Pods</a>
+  - <a href="#pod">Pod</a>
   - <a href="#workload-resources">Workload Resources</a>
   
 -------------
@@ -119,6 +119,11 @@
   However, to make life considerably easier, you don't need to manage each Pod directly. Instead, you can use workload resources that manage a set of pods on your behalf. These resources configure controllers that make sure the right number of the right kind of pod are running, to match the state you specified.
 
 > 在一組 Pod 中運行 workload，用來「管理或是運行 Container」 在 Cluster 上。
+
+<br>
+
+- <a href="https://kubernetes.io/docs/concepts/workloads/pods/"><div id="pod">Pod</div></a>
+
 
 <br>
 
