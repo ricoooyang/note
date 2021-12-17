@@ -118,9 +118,11 @@
     
     > stateless applications don’t “store” data. On the other hand, stateful applications require backing storage
     - Deployment 
-        - Deployment 為 Pod 和 Replica Set（下一代 Replication Controller）提供聲明式更新。
+        - Deployment 為 Pod 和 Replica Set（舊名: Replication Controller）提供聲明式更新。
         - 根據 Deployment 的設定，確保該 Pod 有一定的數量運行在 node 上
     - StatefulSet 
+        - 透過 PVC (Persistent Volume Claim) 提供穩定的 Storage Identity
+        - Headless Service 提供穩定的 Network Identity
     - DaemonSet
     - Job and CronJob 
 
