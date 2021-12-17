@@ -38,19 +38,22 @@
   - 管理整個 Kubernetes 所需 API 的接口，例如從 Command Line 下 kubectl 指令就會把指令送到這裏
   - 負責 Node 之間的溝通橋樑，每個 Node 彼此不能直接溝通，必須要透過 apiserver 轉介
   - 負責 Kubernetes 中的請求的身份認證與授權
-
+  
+<br>
 
 - <div id="etcd">etcd</div>
 
     > Consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.
   - 用來存放 Kubernetes Cluster 的資料作為備份，當某些原因而故障時，可以透過 etcd 還原 Kubernetes 的狀態
 
+<br>
 
 - <div id="kube-scheduler"><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/">kube-scheduler</a></div>
 
     > Control plane component that watches for newly created Pods with no assigned node, and selects a node for them to run on.
   - Kubernetes 的 Pods 調度員，scheduler 會監視新建立但還沒有被指定要跑在哪個 Node 上的 Pod，並根據每個 Node 上面資源規定、硬體限制等條件去協調出一個最適合放置的 Node 讓該 Pod 啟動
   
+<br>
 
 - <div id="kube-controller-manager"><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/">kube-controller-manager</a></div>
 
@@ -63,6 +66,7 @@
   - Endpoints controller: Populates the Endpoints object (that is, joins Services & Pods).
   - Service Account & Token controllers: Create default accounts and API access tokens for new namespaces.
   
+<br>
 
 - <div id="cloud-controller-manager"><a href="https://kubernetes.io/docs/concepts/architecture/cloud-controller/">cloud-controller-manager</a></div>
 
@@ -75,6 +79,7 @@
 
     > 一個 Worker Node（簡稱 Node）對應到一台機器，可以是實體機、虛擬機如 AWS 上的一台 EC2 或 GCP 上的一台 Computer Engine。每個 Node 中都有三個組件：kubelet、kube-proxy、Container Runtime。
 
+<br>
 
 - <div id="kubelet">kubelet</div>
 
@@ -84,6 +89,7 @@
 
     > Node 的管理員，負責管理該 Node 上的所有 Pods 的狀態並負責與 Control Plane (舊名:Master node) 溝通
 
+<br>
 
 - <div id="kube-proxy">kube-proxy</div>
 
@@ -93,6 +99,7 @@
 
     > 處理每個節點上的虛擬網路。 Proxy 會路由網路流量，以及管理服務和 Pod 的 IP 定址。
 
+<br>
 
 - <div id="container-runtime">Container Runtime</div>
  
@@ -101,6 +108,7 @@
 
     > 該 Node 真正負責容器執行的程式，以 Docker 容器為例其對應的 Container Runtime 就是 Docker Engine
 
+<br>
 
 -------
 
@@ -112,7 +120,9 @@
 
 > 在一組 Pod 中運行 workload，用來「管理或是運行 Container」 在 Cluster 上。
 
-- Kubernetes provides several built-in workload resources:
+<br>
+
+- <div id="workload-resources">Kubernetes provides several built-in workload resources:</div>
 
     > <a href="https://www.baeldung.com/ops/kubernetes-deployment-vs-statefulsets"> before you get started, you should know concepts of stateless and stateful.</a>
     
