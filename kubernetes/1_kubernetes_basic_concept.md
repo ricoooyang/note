@@ -82,7 +82,7 @@
       The kubelet takes a set of PodSpecs that are provided through various mechanisms and ensures that the containers described in those PodSpecs are running and healthy. 
       The kubelet doesn't manage containers which were not created by Kubernetes.
 
-    > Node 的管理員，負責管理該 Node 上的所有 Pods 的狀態並負責與 Master 溝通
+    > Node 的管理員，負責管理該 Node 上的所有 Pods 的狀態並負責與 Control Plane (舊名:Master node) 溝通
 
 
 - <div id="kube-proxy">kube-proxy</div>
