@@ -118,7 +118,7 @@
   Kubernetes pods have a defined lifecycle. For example, once a pod is running in your cluster then a critical fault on the node where that pod is running means that all the pods on that node fail. Kubernetes treats that level of failure as final: you would need to create a new Pod to recover, even if the node later becomes healthy.
   However, to make life considerably easier, you don't need to manage each Pod directly. Instead, you can use workload resources that manage a set of pods on your behalf. These resources configure controllers that make sure the right number of the right kind of pod are running, to match the state you specified.
 
-> 在一組 Pod 中運行 workload，用來「管理或是運行 Container」 在 Cluster 上。
+> 定義 Pods 的 lifecycle，用來「管理或是運行 Container」 在 Cluster 上。
 
 <br>
 
