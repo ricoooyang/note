@@ -6,6 +6,7 @@
 - kubectl get ingress
 - kubectl delete -n default pod {pod name}
 - kubectl delete all --all --all-namespaces
+- kubectl delete -A ValidatingWebhookConfiguration ingress-nginx-admission
 
 
 # minikube CLI
