@@ -1,4 +1,5 @@
 # kubectl CLI
+- kubectl create -f xxxx.yaml
 - kubectl get pods
 - kubectl get deploy
 - kubectl get services
