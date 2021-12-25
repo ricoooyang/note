@@ -6,6 +6,7 @@
 - kubectl get ingress
 - kubectl delete -n default pod {pod name}
 - kubectl delete all --all --all-namespaces
+- kubectl delete ingress {ingress name}
 - kubectl delete -A ValidatingWebhookConfiguration ingress-nginx-admission
 
 
