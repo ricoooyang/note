@@ -8,6 +8,7 @@
     - <a href="#consumer">Consumer</a>
     - <a href="#consumer-group">Consumer Group</a>
     - <a href="#partition">Partition</a>
+    - <a href="#zookeeper">zookeeper</a>
 
   
 -------------
@@ -22,6 +23,8 @@
 ## <div id="concept">核心概念</div>
 
 ![title](images/1-1.jpg)
+-------
+![title](images/1-2.jpg)
 
 - #### <div id="topic">Topic</div>
     - 對於消息的定義及分類 (類似於DB table)
@@ -48,10 +51,18 @@
 - #### <div id="partition">Partition</div>
     - <a href="https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/ch04.html">他說得hen棒</a>
     
+- #### <div id="zookeeper">zookeeper</div>
+    - <a href="https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/ch04.html">他說得hen棒</a>
+    
 
 -------
 
 - reference: 
+    - https://medium.com/@chihsuan/introduction-to-apache-kafka-1cae693aa85e
+    - https://www.readfog.com/a/1632285483296985088
+    - https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/ch04.html
+    - https://gitbook.cn/books/5ae1e77197c22f130e67ec4e/index.html
+    
 
 -------
 
