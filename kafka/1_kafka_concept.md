@@ -52,9 +52,10 @@
     - <a href="https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/ch04.html">他說得hen棒</a>
     
 - #### <div id="zookeeper">zookeeper</div>
-    - <a href="https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/ch04.html">他說得hen棒</a>
+    - 負責 kafka cluster 的配置 (bare-metal hardware)
+    - topic leader follower 的選舉
+    - 紀錄 consumer or consumer group 各 topic partition 的 offset (簡而言之就是讀到哪了)
     
-
 -------
 
 - reference: 
