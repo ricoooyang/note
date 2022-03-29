@@ -35,7 +35,7 @@
     
 - #### <div id="broker">Broker</div>
     - 儲存消息的 server，多個 Broker 即是 kafka cluster
-    - kafka cluster 負責 topic 的 partition , replica 
+    - kafka cluster 負責 topic 的 partition , replica (leader, follower) 
     
 - #### <div id="producer">Producer</div>
     - 消息發送者，push 消息至 broker
