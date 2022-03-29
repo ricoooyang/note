@@ -34,7 +34,7 @@
     - 每個 message 都屬於一個 topic，該 message 列入topic 中 partition 的列隊裡
     
 - #### <div id="broker">Broker</div>
-    - Broker 儲存消息的 server，多個 Broker 即是 kafka cluster
+    - 儲存消息的 server，多個 Broker 即是 kafka cluster
     - kafka cluster 負責 topic 的 partition , replica 
     
 - #### <div id="producer">Producer</div>
