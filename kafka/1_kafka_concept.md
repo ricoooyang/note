@@ -3,10 +3,10 @@
 - <a href="#concept">核心概念</a>
     - <a href="#topic">Topic</a>
     - <a href="#message">Message</a>
-    - <a href="#producer">Producer</a>
     - <a href="#broker">Broker</a>
+    - <a href="#producer">Producer</a>
     - <a href="#consumer">Consumer</a>
-    - <a href="#consumerGroup">Consumer Group</a>
+    - <a href="#consumer-group">Consumer Group</a>
     - <a href="#partition">Partition</a>
 
   
@@ -23,24 +23,27 @@
 
 ![title](images/1-1.jpg)
 
-- ##### <div id="topic">Topic</div>
+- #### <div id="topic">Topic</div>
     - 對於消息的定義及分類 (類似於DB table)
+    - 可對 Topic 進行 partition (hash key 或 round robin 等不同演算法)
     
-- ##### <div id="message">Message</div>
-    - 每個 message 都屬於一個 topic，該 message 會列入所屬 topic 的列隊
+- #### <div id="message">Message</div>
+    - 每個 message 都屬於一個 topic，該 message 列入topic 中 partition 的列隊裡
     
-- ##### <div id="producer">Producer</div>
-    - 消息發送者，push 消息至 broker
-    
-- ##### <div id="broker">Broker</div>
+- #### <div id="broker">Broker</div>
     - Broker 儲存消息的 server，多個 Broker 即是 kafka cluster
     - kafka cluster 負責 topic 的 partition , replica 
     
-- ##### <div id="consumer">Consumer</div>
-    - 消息消費者，從 Kafka 集群的 broker 中 pull message
+- #### <div id="producer">Producer</div>
+    - 消息發送者，push 消息至 broker
     
-- ##### <div id="consumer-group">Consumer Group</div>
-    - 消息消費者，從 Kafka 集群的 broker 中 pull message
+- #### <div id="consumer">Consumer</div>
+    - 消息消費者，從 Kafka cluster pull message
+    
+- #### <div id="consumer-group">Consumer Group</div>
+    - 相同群組的 consumer 共享一個 offset，意旨一個 message 只會被該群組消費一次
+    - 不同的 consumer group 擁有不同的 offset，完全不影響其他的 group
+    - 同一 consumer group，consumer 數量不得大於 topic partition 數量 <a href="https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/ch04.html">詳情參考</a>
     
 
 -------
