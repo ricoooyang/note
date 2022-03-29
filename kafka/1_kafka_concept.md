@@ -44,6 +44,9 @@
     - 相同群組的 consumer 共享一個 offset，意旨一個 message 只會被該群組消費一次
     - 不同的 consumer group 擁有不同的 offset，完全不影響其他的 group
     - 同一 consumer group，consumer 數量不得大於 topic partition 數量 <a href="https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/ch04.html">詳情參考</a>
+
+- #### <div id="partition">Partition</div>
+    - <a href="https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/ch04.html">他說得hen棒</a>
     
 
 -------
