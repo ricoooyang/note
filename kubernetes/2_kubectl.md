@@ -3,6 +3,7 @@
 - kubectl get pod
 - kubectl get pod -o wide
 - kubectl get deploy
+- kubectl get deploy {deployment name} -o yaml (get deployment status from etcd)
 - kubectl get services
 - kubectl get ingress
 - kubectl describe pods
