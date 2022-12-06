@@ -1,9 +1,13 @@
 # kubectl CLI
 - kubectl create -f xxxx.yaml
-- kubectl get pods
+- kubectl get pod
+- kubectl get pod -o wide
 - kubectl get deploy
 - kubectl get services
 - kubectl get ingress
+- kubectl describe pods
+- kubectl describe po -l name=myLabel
+- kubectl describe service {service name}
 - kubectl delete -n default pod {pod name}
 - kubectl delete all --all --all-namespaces
 - kubectl delete ingress {ingress name}
