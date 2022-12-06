@@ -10,6 +10,7 @@
 - kubectl get deploy [ deployment name ] -o yaml (get deployment status from etcd)
 - kubectl get services
 - kubectl get ingress
+- kubectl get all
   
 - kubectl describe pods
 - kubectl describe po -l name=[ label ]
