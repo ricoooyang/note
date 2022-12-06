@@ -1,5 +1,8 @@
 # kubectl CLI
+
+- kubectl create [ resource ]
 - kubectl create -f [ file name ]
+- kubectl apply -f [ file name ]
   
 - kubectl get pod
 - kubectl get pod -o wide
