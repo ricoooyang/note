@@ -25,6 +25,9 @@
 - kubectl expose deployment nighter-customer-site-deployment --type=LoadBalancer --port=80
 - kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.0/deploy/static/provider/cloud/deploy.yaml
 
+- kubectl port-forward [ resource ]/[ metadata name ] [ port ]:[ port ]
+    -  kubectl port-forward service/mongo-express-service 8081:8081
+
 # minikube CLI
 - minikube start
 - minikube stop
@@ -32,3 +35,6 @@
 - minikube ssh
 - minikube addons enable ingress
 - minikube dashboard
+- minikube service [ service name ]
+    - assign external service a public ip address
+    - minikube service mongo-express-service
