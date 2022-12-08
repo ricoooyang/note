@@ -4,7 +4,7 @@
   - apply all kube yaml in mongo
   
 - mongodb-secret.yaml
-    - 註冊 secret 提供 deployment 使用
+    - 配置 mongodb admin password
   
 - mongodb.yaml
     - 註冊 deployment and service
@@ -12,13 +12,13 @@
     - secret data 的 value 存放 base64 編碼後的值 
 
 - mongo-configmap.yaml
-  - 註冊 config map
+  - 註冊 config map, 設定 mongodb database_url
   
 - mongo-express.yaml
   - 註冊 mongo-express deployment, service
   - mongodb-secret.yaml 取得 mongodb username, password
   - mongo-configmap 取得 database_url
-  - mongo-express-service 多數情境 service無需定義為external ip, 將type: LoadBalancer, nodePort: 30000 移除，port-forward 測試即可
+  - mongo-express-service 多數情境 service無需external ip, 將type: LoadBalancer, nodePort: 30000 移除，port-forward 測試即可
   
 - mongo-ingress.yaml
   - 註冊 ingress forward 到 mongo-express-service
