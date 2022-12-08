@@ -22,6 +22,6 @@
   
 - mongo-ingress.yaml
   - 註冊 ingress forward 到 mongo-express-service
-  - minikube addons enable ingress
-    - 啟用 minikube 提供的 ingress entry point
+  - 啟用 minikube 提供的 ingress entry point
+    - minikube addons enable ingress
   - 定義 /etc/hosts >> 127.0.0.1 mongo.express 
