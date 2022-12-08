@@ -3,6 +3,7 @@
 - kubectl create [ resource ]
 - kubectl create -f [ file name ]
 - kubectl apply -f [ file name ]
+- kubectl apply --recursive -f .
   
 - kubectl get pod
 - kubectl get pod -o wide
@@ -31,6 +32,7 @@
 # minikube CLI
 - minikube start
 - minikube stop
+- minikube delete --all --purge
 - minikube ip
 - minikube ssh
 - minikube addons enable ingress
