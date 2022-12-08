@@ -1,7 +1,7 @@
 # Mongo Demo
 ## steps
-- . apply_kube.sh
-  - apply all kube yaml in mongo
+- 配置mongo底下 kube yaml
+  - . apply_kube.sh
   
 - mongodb-secret.yaml
     - 配置 mongodb admin password
