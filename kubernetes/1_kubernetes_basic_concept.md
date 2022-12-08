@@ -156,6 +156,7 @@
     - https://kubernetes.io/docs/concepts/overview/components/
     - https://www.baeldung.com/ops/kubernetes-deployment-vs-statefulsets
     - https://jimmysong.io/kubernetes-handbook/concepts/deployment.html
+    - https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.25/
 
 -------
 
