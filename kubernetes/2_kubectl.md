@@ -36,6 +36,7 @@
 - minikube ip
 - minikube ssh
 - minikube addons enable ingress
+- minikube tunnel
 - minikube dashboard
 - minikube service [ service name ]
     - assign external service a public ip address
