@@ -14,7 +14,7 @@
         - k8s將container抽象為pod,解耦如docker的容器服務
         - 抽象container後不需操作容器，只需要操作k8s layer
     - Pod 一般只有一個container(可run多個)
-    - Pod有虛擬IP(非container)，當pod死掉重啟後會賦予新的IP
+    - Pod有虛擬IP(非container)，當pod重啟會賦予新的IP
 - Service
     - Entry point of Pods.
     - Permanent IP. 
