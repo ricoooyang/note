@@ -145,8 +145,8 @@
 
 -------
 
-![title](images/1-1.jpg)
-![title](images/1-2.jpg)
+![title](images/1_kubernetes_basic_concept1-1.jpg)
+![title](images/1_kubernetes_basic_concept1-2.jpg)
 
 -------
 
