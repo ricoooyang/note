@@ -11,8 +11,8 @@
 - Pod
     - Smallest unit of k8s
     - Abstraction of container
-        - k8s將container層級抽象為pod, 這樣可解耦如docker的容器服務
-        - 抽象為pod的好處 不需直接操作容器，只需要操作k8s layer
+        - k8s將container抽象為pod,解耦如docker的容器服務
+        - 抽象container後不需操作容器，只需要操作k8s layer
     - Pod 一般只有一個container(可run多個)
     - Pod有虛擬IP(非container)，當pod死掉重啟後會賦予新的IP
 - Service
