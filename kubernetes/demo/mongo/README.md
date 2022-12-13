@@ -36,3 +36,10 @@
   - 啟用 minikube 提供的 ingress entry point
     - minikube addons enable ingress
     - minikube tunnel
+  
+- 訪問 mongo.express
+- 查看 namespace
+  - kubectl get all -n mongodb
+  - kubectl describe namespace mongodb
+  - kubectl get pod -n mongodb -o yaml
+
