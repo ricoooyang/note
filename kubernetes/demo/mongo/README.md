@@ -8,7 +8,7 @@
     - kubectl apply 4-mongodb.yaml
     - kubectl apply 5-mongo-express.yaml
     - kubectl apply 6-mongo-ingress.yaml
-  - 或直接執行 apply_kube.sh 兩種方式擇一
+  - 或執行 apply_kube.sh 兩種方式擇一
   
 - 1-mongodb-namespace.yaml
     - 配置 mongodb namespace
@@ -42,4 +42,7 @@
   - kubectl get all -n mongodb
   - kubectl describe namespace mongodb
   - kubectl get pod -n mongodb -o yaml
+  
+- 刪除 namespace mongodb 設定
+  - 執行 delete_kube.sh
 
