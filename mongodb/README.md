@@ -60,3 +60,5 @@
       - db.books.find({ rating: {$lte: 7}}
     - $or
       - db.books.find({ $or: [{rating:7}, {rating:9}] })
+      - db.books.find({ $or: [{rating:7}, {author:"Terry Prat"}] })
+      - db.books.find({ $or: [{pages: {$lt:400}}, {pages: {$gt:300}}] })
