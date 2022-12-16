@@ -39,3 +39,11 @@
       - db.books.find().sort({title: 1})
       - db.books.find().sort({title: -1})
       - 1: asc, -1: desc
+  
+  - Nested Document
+    - db.books.insertOne({title: "The Way of Kings", author: "Brandon Sanderson", rating: 9, pages: 400, genres:["fantasy"], reviews: [{name: "Yoshi", body: "Great book!!"}, {name: "mario", body: "so so"}]})
+    - db.books.insertMany([
+        {title: "The Light Fantastic", author: "Terry Prat", rating: 8, pages: 350, genres: ["magic"], reviews: [{name: "Biro", body: "wow!!"}, {name: "JayChu", body: "chu chu"}]},
+        {title: "The Name of Wind", author: "Patrick Rothfuss", rating: 10, pages: 500, genres: ["fantasy"], reviews: [{name: "peach", body: "one of my favs"}, {name: "JayChu", body: "chu chu"}]},
+        {title: "The Color of Magic", author: "Terry Prat", rating: 7, pages: 300, genres: ["fantasy", "magic"], reviews: [{name: "luigi", body: "it was ok"}, {name: "bowser", body: "really good book"}]}
+      ])
