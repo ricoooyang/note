@@ -33,7 +33,7 @@
     - db.books.findOne([_id])
       - db.books.findOne({_id: ObjectId("639bd29f77b7cd963c51d87b")})
     
-  - Sorting and Limiting
+  - Sorting & Limiting
     - db.books.find().limit(3)
     - db.books.find().sort([sorting field])
       - db.books.find().sort({title: 1})
@@ -47,3 +47,16 @@
         {title: "The Name of Wind", author: "Patrick Rothfuss", rating: 10, pages: 500, genres: ["fantasy"], reviews: [{name: "peach", body: "one of my favs"}, {name: "JayChu", body: "chu chu"}]},
         {title: "The Color of Magic", author: "Terry Prat", rating: 7, pages: 300, genres: ["fantasy", "magic"], reviews: [{name: "luigi", body: "it was ok"}, {name: "bowser", body: "really good book"}]}
       ])
+      
+  - Operators & Complex Queries
+    - $gt (greater than)
+      - db.books.find({ rating: {$gt: 7}})
+      - db.books.find({ rating: {$gt: 7}, author: "Terry Prat"})
+    - $lt (less than)
+      - db.books.find({ rating: {$lt: 8}})
+    - $gte (greater or equal)
+      - db.books.find({ rating: {$gte: 7}})
+    - $lte (less or equal)
+      - db.books.find({ rating: {$lte: 7}}
+    - $or
+      - db.books.find({ $or: [{rating:7}, {rating:9}] })
