@@ -42,6 +42,7 @@
   
   - Nested Document
     - db.books.insertOne({title: "The Way of Kings", author: "Brandon Sanderson", rating: 9, pages: 400, genres:["fantasy"], reviews: [{name: "Yoshi", body: "Great book!!"}, {name: "mario", body: "so so"}]})
+    - db.books.insertOne({title: "The Biro of Kings", author: "Biro Chu", rating: 8, pages: 500, genres:["sci-fi", "dystopian","magic"], reviews: [{name: "Rico", body: "Jay Chu!!"}, {name: "Tom", body: "are you ok?"}]})
     - db.books.insertMany([
         {title: "The Light Fantastic", author: "Terry Prat", rating: 8, pages: 350, genres: ["magic"], reviews: [{name: "Biro", body: "wow!!"}, {name: "JayChu", body: "chu chu"}]},
         {title: "The Name of Wind", author: "Patrick Rothfuss", rating: 10, pages: 500, genres: ["fantasy"], reviews: [{name: "peach", body: "one of my favs"}, {name: "JayChu", body: "chu chu"}]},
@@ -67,5 +68,15 @@
       - db.books.find({$or: [{rating:7}, {rating:8}, {rating:9}]})
       - db.books.find({rating: {$nin: [7, 8, 9]}})
     - Querying Arrays
+      - db.books.find({genres: "fantasy"})
+      - db.books.find({genres: "magic"})
+      - db.books.find({genres: ["fantasy"]})
+      - db.books.find({genres: ["magic"]}) 
+      - db.books.find({genres: ["fantasy", "magic"]})
+        - 陣列資料順序長度完全相同
+      - db.books.find({genres: {$all: ["dystopian", "sci-fi"]}})
+        - 陣列包含 順序不重要
+      - db.books.find({"reviews.name": "luigi"})
+        - Query of Nested field name places property name in quotations!!!
     
   
