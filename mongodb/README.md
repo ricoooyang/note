@@ -78,5 +78,8 @@
         - 陣列包含 順序不重要
       - db.books.find({"reviews.name": "luigi"})
         - Query of Nested field name places property name in quotations!!!
+    - Delete
+      - db.books.deleteOne({_id:ObjectId("639be6ae4d7ef7d4b96b8cc7")})
+      - db.books.deleteMany({author:"Terry Prat"})
     
   
