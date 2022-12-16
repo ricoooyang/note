@@ -13,3 +13,6 @@
     {title: "The Light Fantastic", author: "Terry Prat", pages: 250, rating: 6, genres: ["fantasy"]},
     {title: "Dune", author: "Frank Herbert", pages: 500, rating: 10, genres: ["sci-fi", "dystopian"]},
     ])
+  - db.books.find()
+    - find first 20 data inside this collection
+  - db.books.find({author: "Terry Prat"})
