@@ -1,0 +1,109 @@
+[{
+  "_id": {
+    "$oid": "639be6a94d7ef7d4b96b8cc5"
+  },
+  "title": "The Way of Kings",
+  "author": "Brandon Sanderson",
+  "rating": 9,
+  "pages": 400,
+  "genres": [
+    "fantasy"
+  ],
+  "reviews": [
+    {
+      "name": "Yoshi",
+      "body": "Great book!!"
+    },
+    {
+      "name": "mario",
+      "body": "so so"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "639be6ae4d7ef7d4b96b8cc6"
+  },
+  "title": "The Light Fantastic",
+  "author": "Terry Prat",
+  "rating": 8,
+  "pages": 350,
+  "genres": [
+    "magic"
+  ],
+  "reviews": [
+    {
+      "name": "Biro",
+      "body": "wow!!"
+    },
+    {
+      "name": "JayChu",
+      "body": "chu chu"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "639be6ae4d7ef7d4b96b8cc7"
+  },
+  "title": "The Name of Wind",
+  "author": "Patrick Rothfuss",
+  "rating": 10,
+  "pages": 500,
+  "genres": [
+    "fantasy"
+  ],
+  "reviews": [
+    {
+      "name": "peach",
+      "body": "one of my favs"
+    },
+    {
+      "name": "JayChu",
+      "body": "chu chu"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "639be6ae4d7ef7d4b96b8cc8"
+  },
+  "title": "The Color of Magic",
+  "author": "Terry Prat",
+  "rating": 7,
+  "pages": 300,
+  "genres": [
+    "fantasy",
+    "magic"
+  ],
+  "reviews": [
+    {
+      "name": "luigi",
+      "body": "it was ok"
+    },
+    {
+      "name": "bowser",
+      "body": "really good book"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "639c152e7f0c4feb21b8e4f8"
+  },
+  "title": "The Biro of Kings",
+  "author": "Biro Chu",
+  "rating": 8,
+  "pages": 500,
+  "genres": [
+    "sci-fi",
+    "dystopian",
+    "magic"
+  ],
+  "reviews": [
+    {
+      "name": "Rico",
+      "body": "Jay Chu!!"
+    },
+    {
+      "name": "Tom",
+      "body": "are you ok?"
+    }
+  ]
+}]
