@@ -1,0 +1,4 @@
+- 環境
+  - docker run --name mongodb -p 27017:27017 arm64v8/mongo
+  - x86主機需要更換image, arm64v8/mongo -> mongo
+  - 安裝MongoDB Compass(GUI)
