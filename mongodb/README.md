@@ -1,13 +1,13 @@
 - 環境
-  - docker run --name mongodb -p 27017:27017 arm64v8/mongo
-  - x86主機更換image, arm64v8/mongo -> mongo
+  - docker run --name mongodb -p 27017:27017 mongo
   - 安裝MongoDB Compass(GUI)
   
+
 - MongoDB Shell
+  - 可透過 MongoDB Compass 執行
   - show dbs
   - use [database]
   - show collections
-    
   - Create
     - db.books.insertOne([data])
       - 新增單筆
