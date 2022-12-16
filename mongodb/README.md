@@ -126,5 +126,8 @@
       - $addToSet
         - 新增多筆array不重複資料
         - db.books.updateOne({_id:ObjectId("639be6ae4d7ef7d4b96b8cc7")}, {$addToSet: {genres: {$each:["1","2","3"]}}})
+- ref
+  - https://www.mongodb.com/docs/manual/reference/operator/query/
+  - https://youtube.com/playlist?list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA
     
   
