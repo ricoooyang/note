@@ -1,8 +1,13 @@
 # What is Kubernetes?
-> 由google開源的容器編排工具，可以管理不同環境容器化的應用，像是實體機、虛擬機、雲等主機
+- Open source container orchestration tool
+- Develop by Google
+- Helps you manage containerized applications in different development environments
+ 
 # What problems does Kubernetes solve?
-> 在日益增長容器化的服務，管理可能是上百或上千跨環境的容器，僅僅使用腳本或客製化的處理方式，並不切實際。
-> k8s container orchestration technologies 之所以誕生。
+> Microservices cost increased usage of container technologies because containers offer the perfect host for small 
+> independent applications, and the rise of containers resulted in applications are comprised of hundreds or even thousands of containers,
+> managing those containers across multiple environments using script and self-made tools can be really complex and even impossible.
+
 # What features do orchestration tools offer?
 - HA(high availability) or No Downtime， 高可用性
 - Scalability or high performance，可擴充性
@@ -21,7 +26,7 @@
     - Lifecycle of Pods and Service are Not connected.
 
 - Ingress
-    - Route traffic into k8s cluster
+    - Route traffic into k8s cluster 
     - Service entry point.
     
 - ConfigMap
@@ -48,10 +53,40 @@
     - Abstraction of pods
     - Define blueprints for pods that have its status. e.g. Kafka MongoDb MySql e.t.c
     - Avoid data inconsistencies are offered
-
+  
 ![title](images/README1.png)
 ![title](images/README2.png)
   
-# Kubernetes Architecture 
+# Kubernetes Architecture
+- work node
+  - kubelet
+    - interact with containers and node
+    - assign resources to container in the node
+    - start pods inside node 
+  - kube proxy
+    - forward the requests
+    - make sure that the communication works in a performant way with low overhead  
+  - container runtime
     
+![title](images/README3.png)
+
+- master node
+  - Api Server
+    - cluster gateway, we use UI(kubernetes dashboard), Command tool(kubectl) interact k8s cluster through Api Server
+    - cluster gatekeeper for authentication to make sure only authenticated and authorized requests get through to the cluster
+  - Scheduler
+    - schedule pod or component to a available node 
+  - Controller Manager
+    - detect cluster state change
+  - etcd
+    - etcd is a cluster brain
+    - cluster changes get stored in the key value store 
+    - e.g.
+      - How Scheduler knows what resource of nodes are available ?
+      - How Controller knows cluster state change ?
+  
+
+- Ref
+  - https://www.youtube.com/watch?v=X48VuDVv0do&t=7999s
+  - 
      
