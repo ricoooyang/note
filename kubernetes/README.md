@@ -88,5 +88,5 @@
 
 - Ref
   - https://www.youtube.com/watch?v=X48VuDVv0do&t=7999s
-  - 
+  - https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#-strong-api-overview-strong-
      
