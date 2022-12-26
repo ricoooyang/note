@@ -27,7 +27,13 @@
 - kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.0/deploy/static/provider/cloud/deploy.yaml
 
 - kubectl port-forward [ resource ]/[ metadata name ] [ port ]:[ port ]
-    -  kubectl port-forward service/mongo-express-service 8081:8081
+  -  kubectl port-forward service/mongo-express-service 8081:8081
+  
+## update image
+- kubectl delete pod [ pod name ]
+  - 用刪除的方式更新
+- kubectl set image object_type/object_name container_name=image_source
+  - kubectl set image deployment/mongodb-deployment mongodb=mongo:6
 
 # minikube CLI
 - minikube start
